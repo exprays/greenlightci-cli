@@ -7,6 +7,7 @@ A command-line tool for checking Baseline web feature compatibility in your loca
 - ✅ **Local file scanning** - Detect web features in CSS, JS, and framework files
 - 👀 **Watch mode** - Continuously monitor files for changes
 - 📊 **Rich terminal output** - Colored, formatted compatibility reports
+- 💻 **Feature-rich Dashboard** - A one stop solution for all the projects and reports and trends
 - 📄 **HTML reports** - Generate detailed compatibility reports
 - 🎨 **Multiple file types** - Supports CSS, SCSS, JS, TS, JSX, TSX, Vue, Svelte
 - ⚡ **Fast scanning** - Efficiently scan large codebases
@@ -50,6 +51,14 @@ greenlightci check --json > report.json
 - `--verbose` - Show detailed output
 - `--include <patterns>` - File patterns to include (comma-separated)
 - `--exclude <patterns>` - File patterns to exclude (comma-separated)
+
+### With Dashboard
+
+```bash
+greenlightci check ./src --dashboard-url https://greenlightci-dashboard.vercel.app --dashboard-api-key your-api-key
+```
+
+To obtain the api key sign-in to the dashboard at https://greenlightci-dashboard.vercel.app with github and then go to settings to obtain the api key.
 
 ### Watch Mode
 
@@ -197,6 +206,7 @@ Supported file extensions:
 3. **Integrate with CI/CD** - Use JSON output for automated checks
 4. **Customize patterns** - Focus on specific directories with include/exclude
 5. **Use verbose mode** - Get detailed information about each feature
+6. **Use Dashboard** - Get your reports saved to greenlight dashboard
 
 ## 🤝 Integration
 
@@ -234,9 +244,8 @@ npx greenlightci check --block-newly --block-limited
 
 ## 📚 Related Packages
 
-- **[@greenlightci/action](../action)** - GitHub Action for PR checks
-- **[@greenlightci/dashboard](../dashboard)** - Web dashboard for tracking adoption
-- **[@greenlightci/shared](../shared)** - Shared utilities and types
+- **[@greenlightci/action](https://github.com/exprays/greenlightci-action)** - GitHub Action for PR checks
+- **[@greenlightci/dashboard](https://github.com/exprays/greenlightci-dashboard)** - Web dashboard for tracking adoption
 
 ## 📝 License
 
